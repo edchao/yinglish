@@ -1,0 +1,72 @@
+/* #Reset 
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; line-height: 30px; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+html, body { height: 100%; }
+
+/* Breakpoints ========================================================================== */
+body { font-family: 'Readex Pro', sans-serif; display: flex; flex-direction: column; margin: none; padding: none; color: rgba(0, 0, 0, 0.8); background-color: white; }
+
+main { display: flex; flex-direction: row; min-height: 100vh; }
+
+@media only screen and (min-width: 180px) and (max-width: 500px) { main { flex-direction: column; margin: 40px; } }
+
+footer { position: fixed; width: 100%; display: flex; bottom: 0px; }
+
+.brand { flex-basis: 50%; padding: 40px 0 40px 40px; }
+
+@media only screen and (min-width: 180px) and (max-width: 500px) { .brand { padding: 0px; } }
+
+.brand .logo { width: 100px; position: fixed; }
+
+@media only screen and (min-width: 180px) and (max-width: 500px) { .brand .logo { position: relative; width: 80px; } }
+
+.content { flex-basis: 50%; flex-grow: 0; padding: 40px 40px 40px 0; }
+
+@media only screen and (min-width: 180px) and (max-width: 500px) { .content { padding: 40px 0px 0px 0px; } }
+
+.description { font-size: 30px; line-height: 1.3em; }
+
+@media only screen and (min-width: 180px) and (max-width: 500px) { .description { font-size: 28px; } }
+
+.pricing { display: flex; flex-direction: column; margin-top: 40px; margin-bottom: 40px; }
+
+.pricing .row { display: flex; align-items: center; }
+
+.pricing .label { border-top: 1px solid gainsboro; color: rgba(0, 0, 0, 0.4); }
+
+.pricing .col { flex-basis: 30%; padding: 20px 0; }
+
+@media only screen and (min-width: 180px) and (max-width: 500px) { .pricing .col { flex-basis: 40%; } }
+
+.pricing .col.end { flex-basis: 70%; }
+
+.pricing .spacer { flex-basis: 3%; }
+
+.microcopy { padding: 20px 0 180px 0; }
+
+.tab { margin-left: 50%; background-color: white; width: calc(100%); }
+
+@media only screen and (min-width: 180px) and (max-width: 500px) { .tab { margin-left: 40px; } }
+
+.contact { margin: 0 40px 0 0; padding: 28px 0; border-top: 1px solid gainsboro; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; }
+
+#email { font-weight: 600; }
+
+.button { background-color: black; color: #fafafa; padding: 10px; font-size: 0.75rem; font-weight: 600; border-radius: 10px; cursor: pointer; }
+
+.button.copied { background-color: rgba(0, 0, 0, 0); color: black; }
+
+/*# sourceMappingURL=styles.css.map */
