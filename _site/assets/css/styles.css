@@ -17,6 +17,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 html, body { height: 100%; }
 
 /* Breakpoints ========================================================================== */
+html { background-color: white; }
+
+@media (prefers-color-scheme: dark) { html { background-color: #202020; } }
+
 body { font-family: 'Readex Pro', sans-serif; display: flex; flex-direction: column; margin: none; padding: none; color: rgba(0, 0, 0, 0.8); background-color: white; }
 
 @media (prefers-color-scheme: dark) { body { background: #202020; color: #F0F0F0; } }
