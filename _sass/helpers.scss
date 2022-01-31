@@ -9,16 +9,7 @@
 
 @mixin respond-to($type){
   @if $type == mobile{
-    @media only screen and (min-width: $mobile) and (max-width: $tablet) { @content; }
-  }
-  @elseif $type == tablet{
-    @media only screen and (min-width: $tablet + 1) and (max-width: $laptop) { @content; }
-  }
-  @elseif $type == laptop {
-    @media only screen and (min-width: $laptop + 1) and (max-width: $desktop) { @content; }
-  }
-  @elseif $type == desktop {
-    @media only screen and (min-width: $desktop + 1) and (max-width: $widescreen) { @content }
+    @media only screen and (min-width: $mobile) and (max-width: $laptop) { @content; }
   }
 }
 
