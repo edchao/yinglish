@@ -29,6 +29,8 @@ main { display: flex; flex-direction: row; min-height: 100vh; }
 
 @media only screen and (min-width: 180px) and (max-width: 960px) { main { flex-direction: column; margin: 40px; } }
 
+nav { display: flex; }
+
 footer { position: fixed; width: 100%; display: flex; bottom: 0px; }
 
 .brand { flex-basis: 50%; padding: 40px 0 40px 40px; }
@@ -45,25 +47,57 @@ footer { position: fixed; width: 100%; display: flex; bottom: 0px; }
 
 @media only screen and (min-width: 180px) and (max-width: 960px) { .content { padding: 40px 0px 0px 0px; } }
 
+.menu { list-style-type: none; display: flex; }
+
+.menu a { text-decoration: none; }
+
+.menu .item { display: block; padding: 5px 10px; margin-right: 10px; margin-bottom: 40px; background-color: rgba(0, 0, 0, 0.05); border-radius: 9px; color: rgba(0, 0, 0, 0.8); }
+
+@media (prefers-color-scheme: dark) { .menu .item { color: #fff; background-color: rgba(255, 255, 255, 0.1); } }
+
+.menu .item:hover { background-color: rgba(0, 0, 0, 0.1); }
+
+@media (prefers-color-scheme: dark) { .menu .item:hover { background-color: #333333; } }
+
+.menu .item a { text-decoration: none; }
+
+.menu .selected { background-color: #000; color: #fff; }
+
+@media (prefers-color-scheme: dark) { .menu .selected { background-color: #fff; color: rgba(0, 0, 0, 0.8); } }
+
+.menu .selected:hover { background-color: #000; }
+
+@media (prefers-color-scheme: dark) { .menu .selected:hover { background-color: #fff; } }
+
 .description { font-size: 30px; line-height: 1.3em; }
 
 @media only screen and (min-width: 180px) and (max-width: 960px) { .description { font-size: 28px; } }
 
-.pricing { display: flex; flex-direction: column; margin-top: 40px; margin-bottom: 40px; }
+.matrix { display: flex; flex-direction: column; margin-top: 40px; margin-bottom: 40px; }
 
-.pricing .row { display: flex; align-items: center; }
+.matrix .row { display: flex; align-items: center; }
 
-.pricing .label { border-top: 1px solid gainsboro; color: rgba(0, 0, 0, 0.4); }
+.matrix .row.question { padding: 0 0 20px 0; color: rgba(0, 0, 0, 0.4); }
 
-@media (prefers-color-scheme: dark) { .pricing .label { color: #909090; border-top: 1px solid #555555; } }
+@media (prefers-color-scheme: dark) { .matrix .row.question { color: #909090; } }
 
-.pricing .col { flex-basis: 30%; padding: 20px 0; }
+.matrix .row.answer { display: block; padding: 0 0 20px 0; margin-bottom: 20px; color: rgba(0, 0, 0, 0.8); line-height: 1.5em; }
 
-@media only screen and (min-width: 180px) and (max-width: 960px) { .pricing .col { flex-basis: 40%; } }
+@media (prefers-color-scheme: dark) { .matrix .row.answer { color: #F0F0F0; } }
 
-.pricing .col.end { flex-basis: 70%; }
+.matrix .row.answer p { margin-bottom: 20px; }
 
-.pricing .spacer { flex-basis: 3%; }
+.matrix .label { border-top: 1px solid gainsboro; color: rgba(0, 0, 0, 0.4); }
+
+@media (prefers-color-scheme: dark) { .matrix .label { color: #909090; border-top: 1px solid #555555; } }
+
+.matrix .col { flex-basis: 30%; padding: 20px 0; }
+
+@media only screen and (min-width: 180px) and (max-width: 960px) { .matrix .col { flex-basis: 40%; } }
+
+.matrix .col.end { flex-basis: 70%; }
+
+.matrix .spacer { flex-basis: 3%; }
 
 .microcopy { padding: 20px 0 180px 0; }
 
