@@ -50,6 +50,7 @@ main {
 
 nav {
   display: flex;
+  justify-content: space-between;
 }
 
 footer {
@@ -100,6 +101,10 @@ footer {
 
   @include respond-to(mobile){
     padding: $pad 0px 0px 0px;
+  }
+
+  a {
+    color: rgb(25, 147, 226);
   }
 }
 
@@ -157,6 +162,23 @@ footer {
     }
   }
 
+}
+
+.status{
+  display: block;
+  padding: 5px 0;
+  margin-bottom: $pad;
+  border-radius: 9px;
+  line-height: 1.8em;
+  &.open{
+    color: rgb(0, 200, 86);
+  }
+  &.closed{
+    color: rgb(250, 54, 54);
+  }
+  &.limited{
+    color:rgb(255, 168, 0);
+  }
 }
 
 .description {
