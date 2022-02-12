@@ -79,6 +79,8 @@ footer { position: fixed; width: 100%; display: flex; bottom: 0px; }
 
 .status.limited { color: #ffa800; }
 
+@media only screen and (min-width: 180px) and (max-width: 960px) { .status { position: fixed; top: 15px; right: 15px; padding: 0 10px; background-color: rgba(165, 235, 185, 0.3); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); } }
+
 .description { font-size: 30px; line-height: 1.3em; }
 
 @media only screen and (min-width: 180px) and (max-width: 960px) { .description { font-size: 28px; } }
